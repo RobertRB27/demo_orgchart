@@ -24,7 +24,7 @@ interface OrgNode {
     content: DepartmentInfo;
     onClose: () => void;  // Añadir prop para cerrar el modal
   }
-
+// <iframe src="https://demo-orgchart.vercel.app/orgchart" width="1175px" height="600px"></iframe>
 const orgData: OrgNode = {
     name: "Consejo Politecnico",
     children:[
@@ -36,7 +36,8 @@ const orgData: OrgNode = {
                 department: "Technology",
                 children: [
                     { name: "Analista de Desarrollo", department: "Development" },
-                    { name: "Analista de Infraestructura", department: "Architecture" }
+                    { name: "Analista de Infraestructura", department: "Architecture" },
+                    { name: "Analista de Desarrollo Sr", department: "Development" }
                 ]
                 },
                 {
@@ -50,7 +51,7 @@ const orgData: OrgNode = {
                 },
                 {
                     name: "Gerencia Juridica",
-                    department: "legal",
+                    department: "Legal",
                 }
 
             ]
